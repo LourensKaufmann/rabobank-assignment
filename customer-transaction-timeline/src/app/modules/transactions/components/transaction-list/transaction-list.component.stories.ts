@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import { TransactionListComponent } from './transaction-list.component';
 
 export default {
-  title: 'Transactions/TransactionListComponent',
+  title: 'Modules/Transactions/TransactionListComponent',
   component: TransactionListComponent,
 } as Meta;
 
