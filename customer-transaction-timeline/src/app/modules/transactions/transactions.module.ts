@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TransactionListComponent } from './components/transaction-list/transaction-list.component';
 import { TransactionDetailsComponent } from './components/transaction-details/transaction-details.component';
-import { TransactionService } from './services/transaction.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [TransactionListComponent, TransactionDetailsComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [TransactionListComponent, TransactionDetailsComponent],
 })
 export class TransactionsModule {}

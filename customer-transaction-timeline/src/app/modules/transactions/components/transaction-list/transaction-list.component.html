@@ -1,1 +1,6 @@
 <p>transaction-list works!</p>
+<div
+  *ngFor="let transactionDay of this.transactionDays | async"
+>
+  {{ transactionDay.id }}
+</div>
