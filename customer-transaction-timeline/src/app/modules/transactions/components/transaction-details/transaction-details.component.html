@@ -1,9 +1,12 @@
 <p>transaction-details works!</p>
-<div>{{ (transaction | async)?.id }}</div>
-<div>{{ (transaction | async)?.timestamp }}</div>
-<div>{{ (transaction | async)?.amount }}</div>
-<div>{{ (transaction | async)?.currencyCode }}</div>
-<div>{{ (transaction | async)?.currencyRate }}</div>
-<div>{{ (transaction | async)?.description }}</div>
-<div>{{ (transaction | async)?.otherParty?.name }}</div>
-<div>{{ (transaction | async)?.otherParty?.iban }}</div>
+<div *ngIf="this.transaction">
+    <div>{{ transaction.id }}</div>
+    <div>{{ transaction.timestamp }}</div>
+    <div>{{ transaction.amount }}</div>
+    <div>{{ transaction.currencyCode }}</div>
+    <div>{{ transaction.currencyRate }}</div>
+    <div>{{ transaction.description }}</div>
+    <div>{{ transaction.otherParty?.name }}</div>
+    <div>{{ transaction.otherParty?.iban }}</div>
+</div>
+

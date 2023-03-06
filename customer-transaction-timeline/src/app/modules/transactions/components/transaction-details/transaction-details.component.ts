@@ -10,7 +10,8 @@ import { ITransaction } from '../../types/transaction.type';
   styleUrls: ['./transaction-details.component.scss'],
 })
 export class TransactionDetailsComponent {
-  readonly transaction: Observable<ITransaction>;
+  
+  transaction?: ITransaction;
 
   constructor(
     private transactionService: TransactionService,
@@ -18,9 +19,10 @@ export class TransactionDetailsComponent {
   ) {
     const transactionDate = route.snapshot.paramMap.get('transactionDate')!;
     const transactionId = route.snapshot.paramMap.get('transactionId')!;
-    this.transaction = transactionService.transactionByIdOnDate(
+    
+    transactionService.transactionByIdOnDate(
       parseInt(transactionId),
       transactionDate
-    );
+    ).subscribe(transaction => this.transaction = transaction);
   }
 }
