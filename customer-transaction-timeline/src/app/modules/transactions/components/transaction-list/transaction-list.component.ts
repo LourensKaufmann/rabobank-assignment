@@ -6,15 +6,12 @@ import ITransactionDay, { ITransaction } from '../../types/transaction.type';
 @Component({
   selector: 'app-transaction-list',
   templateUrl: './transaction-list.component.html',
-  styleUrls: ['./transaction-list.component.scss']
+  styleUrls: ['./transaction-list.component.scss'],
 })
 export class TransactionListComponent {
   readonly transactionDays: Observable<ITransactionDay[]>;
-  readonly test: Observable<ITransaction>;
 
-  constructor(private transactionService: TransactionService){
+  constructor(private transactionService: TransactionService) {
     this.transactionDays = transactionService.transactionDays;
-    this.test = transactionService.transactionByIdOnDate(3, '2022-11-08');
-    this.test.subscribe(x => console.log(x));
   }
 }

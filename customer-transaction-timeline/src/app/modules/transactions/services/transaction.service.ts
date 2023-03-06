@@ -21,15 +21,37 @@ export class TransactionService {
   }
 
   get transactionDays(): Observable<ITransactionDay[]> {
-    return this.transactionsApiRespone.pipe(map((x) => x.days));
+    return this.transactionsApiRespone.pipe(
+      map(this.mapResponseToSortedTransactionDays)
+    );
   }
 
-  transactionByIdOnDate(transactionId: number, transactionDate: string): Observable<ITransaction> {
+  transactionByIdOnDate(
+    transactionId: number,
+    transactionDate: string
+  ): Observable<ITransaction> {
     return this.transactionsApiRespone.pipe(
       mergeMap((x) => x.days),
-      single(x => x.id === transactionDate),
+      single((x) => x.id === transactionDate),
       mergeMap((x) => x.transactions),
       single((x) => x.id === transactionId)
     );
+  }
+
+  private mapResponseToSortedTransactionDays(
+    response: ITransactionsApiResponse
+  ): ITransactionDay[] {
+    return response.days
+      .sort((a, b) => {
+        return new Date(a.id) < new Date(b.id) ? 1 : -1;
+      })
+      .map((transactionDay) => {
+        return {
+          ...transactionDay,
+          transactions: transactionDay.transactions.sort((a, b) => {
+            return new Date(a.timestamp) < new Date(b.timestamp) ? 1 : -1;
+          }),
+        };
+      });
   }
 }
