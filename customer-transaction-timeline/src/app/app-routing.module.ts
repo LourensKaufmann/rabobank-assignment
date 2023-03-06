@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { TransactionsComponent } from './pages/transactions/transactions.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { TransactionDetailsPageComponent } from './pages/transaction-details-page/transaction-details-page.component';
+import { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';
 
 const routes: Routes = [
   {
     path: 'transactions',
-    component: TransactionsComponent
+    component: TransactionsPageComponent
+  },
+  {
+    path: 'transactions/:id',
+    component: TransactionDetailsPageComponent
   },
   {
     path: '',
@@ -15,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent
+    component: NotFoundPageComponent
   },
 ];
 

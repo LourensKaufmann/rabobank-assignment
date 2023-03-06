@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TransactionsComponent } from './pages/transactions/transactions.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { LayoutComponent } from './shared/components/layout/layout.component';
+import { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';
+import { TransactionDetailsPageComponent } from './pages/transaction-details-page/transaction-details-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TransactionsComponent,
-    NotFoundComponent,
-    LayoutComponent
+    TransactionsPageComponent,
+    TransactionDetailsPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
