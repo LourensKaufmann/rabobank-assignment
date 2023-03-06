@@ -1,6 +1,10 @@
 <p>transaction-list works!</p>
-<div
-  *ngFor="let transactionDay of this.transactionDays | async"
->
+<div *ngFor="let transactionDay of this.transactionDays | async">
   {{ transactionDay.id }}
+  <div *ngFor="let transaction of transactionDay.transactions">
+    <a [routerLink]="[transactionDay.id, transaction.id]">
+      - {{ transaction.otherParty?.name ?? "Unknown" }}:
+      {{ transaction.amount }} {{ transaction.currencyCode }}
+    </a>
+  </div>
 </div>

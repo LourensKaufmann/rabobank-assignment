@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map, single, mergeMap } from 'rxjs';
 import ITransactionDay, { ITransaction } from '../types/transaction.type';
 
-const API_URL = 'http://localhost:8080/api/transactions';
+const API_URL = 'http://localhost:8080/api/transactions'; // TODO: Move to .env
 
 interface ITransactionsApiResponse {
   days: ITransactionDay[];

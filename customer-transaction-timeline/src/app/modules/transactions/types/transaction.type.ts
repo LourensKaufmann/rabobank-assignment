@@ -10,7 +10,7 @@ export interface ITransaction {
   currencyCode: string;
   currencyRate?: number;
   description: string;
-  otherParty: IOtherParty;
+  otherParty?: IOtherParty;
 }
 
 export interface IOtherParty {

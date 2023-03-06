@@ -10,7 +10,7 @@ const routes: Routes = [
     component: TransactionsPageComponent
   },
   {
-    path: 'transactions/:id',
+    path: 'transactions/:transactionDate/:transactionId',
     component: TransactionDetailsPageComponent
   },
   {

@@ -1,1 +1,9 @@
 <p>transaction-details works!</p>
+<div>{{ (transaction | async)?.id }}</div>
+<div>{{ (transaction | async)?.timestamp }}</div>
+<div>{{ (transaction | async)?.amount }}</div>
+<div>{{ (transaction | async)?.currencyCode }}</div>
+<div>{{ (transaction | async)?.currencyRate }}</div>
+<div>{{ (transaction | async)?.description }}</div>
+<div>{{ (transaction | async)?.otherParty?.name }}</div>
+<div>{{ (transaction | async)?.otherParty?.iban }}</div>
