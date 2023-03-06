@@ -1,0 +1,642 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "TransactionService",
+            "id": "injectable-TransactionService-c5ba3462d6fb94acd2aee6c392646a599b0fcd351b90e7d402efb56b10eb6308321edaa2ab9c98f6053360d482b89e3039ec5b6b2ddf6f81da43ede1d31ba0a6",
+            "file": "src/app/modules/transactions/services/transaction.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class TransactionService {\r\n\r\n  constructor() { }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-ad902fab920301f126165970d53a0db3afe6e58e8f908d05e41272fda5a70677fd4c612acb2e7108fc2099cb202280dba70964a3eb8fb3f79d203fb8d9e93ddb",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'customer-transaction-timeline'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'customer-transaction-timeline';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<router-outlet></router-outlet>\n"
+        },
+        {
+            "name": "LayoutComponent",
+            "id": "component-LayoutComponent-e4af660e71597e0c440facba191c31243f571d7c04b9d233e499f0dbf73a6f7a2ff07e590f8fa152fb95d64637cfa2aa32cec6f2ea8dc3c382cea4c55559e2bd",
+            "file": "src/app/shared/components/layout/layout.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-layout",
+            "styleUrls": [
+                "./layout.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./layout.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'app-layout',\n  templateUrl: './layout.component.html',\n  styleUrls: ['./layout.component.scss']\n})\nexport class LayoutComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./layout.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>layout works!</p>\n"
+        },
+        {
+            "name": "NotFoundPageComponent",
+            "id": "component-NotFoundPageComponent-b11079a7be3e45e083ca8c9200420e2f90a8dbe7f813c9163ab62cad4937fc5ee0ae0a6371bdf3f17fde044993dc1b43131f619e53fd1f82b4739a6b46568be7",
+            "file": "src/app/pages/not-found-page/not-found-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-not-found-page",
+            "styleUrls": [
+                "./not-found-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./not-found-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-not-found-page',\n  templateUrl: './not-found-page.component.html',\n  styleUrls: ['./not-found-page.component.scss']\n})\nexport class NotFoundPageComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./not-found-page.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>not-found-page works!</p>\n"
+        },
+        {
+            "name": "TransactionDetailsComponent",
+            "id": "component-TransactionDetailsComponent-5633ef3fe0005da29b32b9e2caa0e5551a9586750c5a29ed610eab6d5ab3412d7ec51e284914f68dd09920ea7e88c896751ac0e9aaa18d6fb19e8d2cc5a3db8f",
+            "file": "src/app/modules/transactions/components/transaction-details/transaction-details.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-transaction-details",
+            "styleUrls": [
+                "./transaction-details.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./transaction-details.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-transaction-details',\n  templateUrl: './transaction-details.component.html',\n  styleUrls: ['./transaction-details.component.scss']\n})\nexport class TransactionDetailsComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./transaction-details.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>transaction-details works!</p>\n"
+        },
+        {
+            "name": "TransactionDetailsPageComponent",
+            "id": "component-TransactionDetailsPageComponent-4c55350f67f8caf3b76c80677b6bf048ca4d22e8810e26bc66d554d0c766737d287e90ff5c12ca4545d73f4a129411a073425550b73d2661ccae5d0ebceb6ddf",
+            "file": "src/app/pages/transaction-details-page/transaction-details-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-transaction-details-page",
+            "styleUrls": [
+                "./transaction-details-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./transaction-details-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-transaction-details-page',\n  templateUrl: './transaction-details-page.component.html',\n  styleUrls: ['./transaction-details-page.component.scss']\n})\nexport class TransactionDetailsPageComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./transaction-details-page.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>transaction-details-page works!</p>\n"
+        },
+        {
+            "name": "TransactionListComponent",
+            "id": "component-TransactionListComponent-01e050ddee11dc93903b3ff9d0708dacad10e6f023f19cfe71d41b4d1cf1eae00c48a60d9e70af4574d8bc053475d50fc8781608f01cb655b3fb6367e13acfe7",
+            "file": "src/app/modules/transactions/components/transaction-list/transaction-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-transaction-list",
+            "styleUrls": [
+                "./transaction-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./transaction-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { TransactionService } from '../../services/transaction.service';\r\n\r\n@Component({\r\n  selector: 'app-transaction-list',\r\n  templateUrl: './transaction-list.component.html',\r\n  styleUrls: ['./transaction-list.component.scss']\r\n})\r\nexport class TransactionListComponent {\r\n  constructor(private transactionService: TransactionService){\r\n   \r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./transaction-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "transactionService",
+                        "type": "TransactionService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 9,
+                "jsdoctags": [
+                    {
+                        "name": "transactionService",
+                        "type": "TransactionService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<p>transaction-list works!</p>\n"
+        },
+        {
+            "name": "TransactionsPageComponent",
+            "id": "component-TransactionsPageComponent-f07924d74f784948ebab5aa68d58aa980b24a7c5dcb90672f6e552abc7ba11a7b7dbc8d2fa03b013c2836c2186cadc85b747b0bd20f9302c00f5ed4837a16b74",
+            "file": "src/app/pages/transactions-page/transactions-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-transactions-page",
+            "styleUrls": [
+                "./transactions-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./transactions-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-transactions-page',\n  templateUrl: './transactions-page.component.html',\n  styleUrls: ['./transactions-page.component.scss']\n})\nexport class TransactionsPageComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./transactions-page.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>transactions-page works!</p>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-4da6d282d987a9a13f423f0aad3c9e0afbe29335993328c1ac81dbafd6f1752d8a96283ec045e4afd1bbeac5226fc3cc900a27500a8b840c3cce96f178409dec",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';\r\nimport { TransactionDetailsPageComponent } from './pages/transaction-details-page/transaction-details-page.component';\r\nimport { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    TransactionsPageComponent,\r\n    TransactionDetailsPageComponent,\r\n    NotFoundPageComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "NotFoundPageComponent"
+                        },
+                        {
+                            "name": "TransactionDetailsPageComponent"
+                        },
+                        {
+                            "name": "TransactionsPageComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-f4b06e2090cc34cf600cf2e94b39d595cd77951caa4948b7b079a437b53a37c92029ceb85db31513e22ad33da77b41564bc6855ba94066adb8825126e903b3f7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';\r\nimport { TransactionDetailsPageComponent } from './pages/transaction-details-page/transaction-details-page.component';\r\nimport { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: 'transactions',\r\n    component: TransactionsPageComponent\r\n  },\r\n  {\r\n    path: 'transactions/:id',\r\n    component: TransactionDetailsPageComponent\r\n  },\r\n  {\r\n    path: '',\r\n    redirectTo: '/transactions',\r\n    pathMatch: 'full',\r\n  },\r\n  {\r\n    path: '**',\r\n    component: NotFoundPageComponent\r\n  },\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule],\r\n})\r\nexport class AppRoutingModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TransactionsModule",
+            "id": "module-TransactionsModule-5ee497f58980192a2cfb89a1ade888de8ec5b210cafd4c59f5b2788812e6cedc62feba45527d0e3607afec8b99077d65e717cd0aa4a86efe0d8470d619f5588a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/modules/transactions/transactions.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { TransactionListComponent } from './components/transaction-list/transaction-list.component';\r\nimport { TransactionDetailsComponent } from './components/transaction-details/transaction-details.component';\r\n\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    TransactionListComponent,\r\n    TransactionDetailsComponent\r\n  ],\r\n  imports: [\r\n    CommonModule\r\n  ]\r\n})\r\nexport class TransactionsModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TransactionDetailsComponent"
+                        },
+                        {
+                            "name": "TransactionListComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/layout/layout.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LayoutComponent>",
+                "defaultValue": "((args: LayoutComponent) => ({\r\n  props: args,\r\n})).bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/shared/components/layout/layout.component.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/layout/layout.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LayoutComponent>",
+                    "defaultValue": "((args: LayoutComponent) => ({\r\n  props: args,\r\n})).bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "transactions",
+                        "component": "TransactionsPageComponent"
+                    },
+                    {
+                        "path": "transactions/:id",
+                        "component": "TransactionDetailsPageComponent"
+                    },
+                    {
+                        "path": "",
+                        "redirectTo": "/transactions",
+                        "pathMatch": "full"
+                    },
+                    {
+                        "path": "**",
+                        "component": "NotFoundPageComponent"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/modules/transactions/components/transaction-details/transaction-details.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TransactionDetailsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/modules/transactions/components/transaction-list/transaction-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TransactionListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/modules/transactions/services/transaction.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TransactionService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/not-found-page/not-found-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NotFoundPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/transaction-details-page/transaction-details-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TransactionDetailsPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/transactions-page/transactions-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TransactionsPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/layout/layout.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/layout/layout.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LayoutComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
