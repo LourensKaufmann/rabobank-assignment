@@ -1,5 +1,11 @@
 @import "../../../styles/colors";
 
+:host.bold {
+    & label {
+        font-weight: bold;
+    }
+}
+
 label {
     font-weight: normal;
     word-wrap: break-word;

@@ -10,9 +10,10 @@ import { LabelValueDateonlyComponent } from 'src/app/shared/components/label-val
 import { LabelValueTimeonlyComponent } from 'src/app/shared/components/label-value-timeonly/label-value-timeonly.component';
 import { LabelValueCurrencyComponent } from 'src/app/shared/components/label-value-currency/label-value-currency.component';
 import { NavigationButtonComponent } from 'src/app/shared/components/navigation-button/navigation-button.component';
+import { TransactionRowComponent } from './components/transaction-row/transaction-row.component';
 
 @NgModule({
-  declarations: [TransactionListComponent, TransactionDetailsComponent],
+  declarations: [TransactionListComponent, TransactionDetailsComponent, TransactionRowComponent],
   imports: [
     CommonModule,
     RouterModule,

@@ -1,13 +1,12 @@
-<ol>
+<ol class="transaction-day-list">
   <li *ngFor="let transactionDay of this.transactionDays | async">
-    <app-label-value-dateonly class="boldd" [dateString]="transactionDay.id"></app-label-value-dateonly>
-    <ol>
+    <app-label-value-dateonly class="bold" [dateString]="transactionDay.id"></app-label-value-dateonly>
+    <ol class="transaction-list">
       <li *ngFor="let transaction of transactionDay.transactions">
-        <div class="temp-3-col-link-grid"> <!-- extract shared component  -->
-          <app-label-value-text>{{ transaction.otherParty?.name ?? "Unknown" }}</app-label-value-text>
-          <app-label-value-currency currencyCode="€" [showPlusSymbolIfPositive]="true" [amount]="transaction.amount"></app-label-value-currency>
-          <app-navigation-button [to]="[transactionDay.id, transaction.id]">Go to details</app-navigation-button>
-        </div>
+        <app-transaction-row
+          [name]="transaction.otherParty?.name ?? 'Unknown'"
+          [amount]="transaction.amount"
+          [to]="[transactionDay.id, transaction.id]"/>
       </li>
     </ol>
   </li>

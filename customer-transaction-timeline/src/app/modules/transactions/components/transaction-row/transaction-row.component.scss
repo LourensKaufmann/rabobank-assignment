@@ -1,0 +1,13 @@
+@import "../../../../styles/colors";
+
+:host {
+    padding-block: 0.1rem;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover, &:focus{
+        background-color: $color-lighter-gray
+    }
+}

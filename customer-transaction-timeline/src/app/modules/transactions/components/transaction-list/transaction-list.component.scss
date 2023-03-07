@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 2rem;
     background-color: $color-white;
+    
 }
 
 ol {
@@ -13,17 +14,13 @@ ol {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    
 }
 
-// TODO: Extract
-.temp-3-col-link-grid {
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    transition: background-color 0.1s ease-in-out;
+.transaction-day-list {
+    gap: 1.5rem;
+}
 
-    &:hover{
-        background-color: $color-lighter-gray
-    }
+.transaction-list {
+    gap: 0.5rem;
 }

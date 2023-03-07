@@ -2,7 +2,6 @@
 Made by Lourens Kaufmann.
 
 ## TODO
-- Finish styling transactions list
 - Add functionality for currency conversion
 - Add unit & integration tests
 - Deploy front-end & back-end to Vercel
