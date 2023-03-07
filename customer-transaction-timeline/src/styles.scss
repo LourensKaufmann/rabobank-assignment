@@ -25,6 +25,14 @@ main {
         @include breakpoint-l {
             width: 50%;
         }
+
+        @include breakpoint-xl {
+            width: 40%;
+        }
+
+        @include breakpoint-xl {
+            width: 30%;
+        }
 }
 
 h1 {
