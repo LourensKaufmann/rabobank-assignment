@@ -6,7 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./transaction-row.component.scss']
 })
 export class TransactionRowComponent {
-  @Input() name?: string;
   @Input() amount: number = 0;
+  @Input() currencyRate?: number;
+  @Input() name?: string;
   @Input() to?: string | any[] | null | undefined;;
 }

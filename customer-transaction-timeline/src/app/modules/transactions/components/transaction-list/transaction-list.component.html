@@ -6,6 +6,7 @@
         <app-transaction-row
           [name]="transaction.otherParty?.name ?? 'Unknown'"
           [amount]="transaction.amount"
+          [currencyRate]="transaction.currencyRate"
           [to]="[transactionDay.id, transaction.id]"/>
       </li>
     </ol>

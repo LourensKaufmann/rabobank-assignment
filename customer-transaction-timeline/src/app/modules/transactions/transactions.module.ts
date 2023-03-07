@@ -11,6 +11,7 @@ import { LabelValueTimeonlyComponent } from 'src/app/shared/components/label-val
 import { LabelValueCurrencyComponent } from 'src/app/shared/components/label-value-currency/label-value-currency.component';
 import { NavigationButtonComponent } from 'src/app/shared/components/navigation-button/navigation-button.component';
 import { TransactionRowComponent } from './components/transaction-row/transaction-row.component';
+import { ConvertedCurrencyPipe } from 'src/app/shared/pipes/converted-currency.pipe';
 
 @NgModule({
   declarations: [TransactionListComponent, TransactionDetailsComponent, TransactionRowComponent],
@@ -24,6 +25,7 @@ import { TransactionRowComponent } from './components/transaction-row/transactio
     LabelValueTimeonlyComponent,
     LabelValueCurrencyComponent,
     NavigationButtonComponent,
+    ConvertedCurrencyPipe,
   ],
   exports: [TransactionListComponent, TransactionDetailsComponent],
 })
