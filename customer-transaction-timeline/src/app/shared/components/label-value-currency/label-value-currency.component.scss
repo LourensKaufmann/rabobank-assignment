@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+
+label {
+    font-weight: normal;
+    word-wrap: break-word;
+    color: $color-dark-gray;
+
+    &.positive {
+        color: $color-green;
+    }
+
+    &.negative {
+        color: $color-red;
+    }
+}

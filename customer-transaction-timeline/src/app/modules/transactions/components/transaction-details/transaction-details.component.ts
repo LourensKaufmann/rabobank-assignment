@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
 import { TransactionService } from '../../services/transaction.service';
 import { ITransaction } from '../../types/transaction.type';
 
 @Component({
   selector: 'app-transaction-details',
   templateUrl: './transaction-details.component.html',
-  styleUrls: ['./transaction-details.component.scss'],
+  styleUrls: ['./transaction-details.component.scss']
 })
 export class TransactionDetailsComponent {
   

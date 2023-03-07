@@ -1,0 +1,3 @@
+<label [ngClass]="amount < 0 ? 'negative' : 'positive'">
+    {{ currencyCode ?? '' }}{{ showPlusSymbolIfPositive && amount >= 0 ? '+' : '' }}{{ amount }}
+</label>

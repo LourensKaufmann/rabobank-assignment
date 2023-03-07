@@ -1,12 +1,46 @@
-<p>transaction-details works!</p>
-<div *ngIf="this.transaction">
-    <div>{{ transaction.id }}</div>
-    <div>{{ transaction.timestamp }}</div>
-    <div>{{ transaction.amount }}</div>
-    <div>{{ transaction.currencyCode }}</div>
-    <div>{{ transaction.currencyRate }}</div>
-    <div>{{ transaction.description }}</div>
-    <div>{{ transaction.otherParty?.name }}</div>
-    <div>{{ transaction.otherParty?.iban }}</div>
-</div>
-<a routerLink="/transactions">Back to list</a>
+<h2>Transaction details</h2>
+<app-details-grid *ngIf="this.transaction">
+  <app-label-property>Date</app-label-property>
+  <app-label-value-dateonly
+    [dateString]="transaction.timestamp"
+  ></app-label-value-dateonly>
+
+  <app-label-property>Time</app-label-property>
+  <app-label-value-timeonly
+    [dateString]="transaction.timestamp"
+  ></app-label-value-timeonly>
+
+  <app-label-property>Amount</app-label-property>
+  <app-label-value-currency
+    [showPlusSymbolIfPositive]="true"
+    [amount]="transaction.amount"
+  ></app-label-value-currency>
+
+  <app-label-property>Currency code</app-label-property>
+  <app-label-value-text>{{ transaction.currencyCode }}</app-label-value-text>
+
+  <app-label-property *ngIf="this.transaction.currencyRate"
+    >Currency rate</app-label-property
+  >
+  <app-label-value-text *ngIf="this.transaction.currencyRate">{{
+    transaction.currencyRate
+  }}</app-label-value-text>
+
+  <app-label-property *ngIf="this.transaction.otherParty"
+    >Name</app-label-property
+  >
+  <app-label-value-text *ngIf="this.transaction.otherParty">{{
+    transaction.otherParty.name
+  }}</app-label-value-text>
+
+  <app-label-property *ngIf="this.transaction.otherParty"
+    >IBAN</app-label-property
+  >
+  <app-label-value-text *ngIf="this.transaction.otherParty">{{
+    transaction.otherParty.iban
+  }}</app-label-value-text>
+
+  <app-label-property>Description</app-label-property>
+  <app-label-value-text>{{ transaction.description }}</app-label-value-text>
+</app-details-grid>
+<app-navigation-button to="/transactions">Back to list</app-navigation-button>
