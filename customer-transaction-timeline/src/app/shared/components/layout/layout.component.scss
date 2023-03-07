@@ -1,0 +1,18 @@
+@import "../../../styles/colors";
+
+header {
+    background-color: $color-white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+
+    &>a {
+        text-decoration: none;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            filter: brightness(0.5);
+        }
+    }
+}
