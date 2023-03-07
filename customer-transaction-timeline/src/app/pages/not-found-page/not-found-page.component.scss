@@ -1,0 +1,10 @@
+@import "../../styles/breakpoints";
+
+main {
+    background-color: transparent;
+
+    @include breakpoint-s {
+        display: flex;
+        align-items: center;
+    }
+}
