@@ -1,9 +1,14 @@
-<div *ngFor="let transactionDay of this.transactionDays | async">
-  {{ transactionDay.id }}
-  <div *ngFor="let transaction of transactionDay.transactions">
-    <a [routerLink]="[transactionDay.id, transaction.id]">
-      - {{ transaction.otherParty?.name ?? "Unknown" }}:
-      {{ transaction.amount }} {{ transaction.currencyCode }}
-    </a>
-  </div>
-</div>
+<ol>
+  <li *ngFor="let transactionDay of this.transactionDays | async">
+    <app-label-value-dateonly class="boldd" [dateString]="transactionDay.id"></app-label-value-dateonly>
+    <ol>
+      <li *ngFor="let transaction of transactionDay.transactions">
+        <div class="temp-3-col-link-grid"> <!-- extract shared component  -->
+          <app-label-value-text>{{ transaction.otherParty?.name ?? "Unknown" }}</app-label-value-text>
+          <app-label-value-currency currencyCode="€" [showPlusSymbolIfPositive]="true" [amount]="transaction.amount"></app-label-value-currency>
+          <app-navigation-button [to]="[transactionDay.id, transaction.id]">Go to details</app-navigation-button>
+        </div>
+      </li>
+    </ol>
+  </li>
+</ol>

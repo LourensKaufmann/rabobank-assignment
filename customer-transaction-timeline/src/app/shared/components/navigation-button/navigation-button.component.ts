@@ -11,5 +11,5 @@ import { RouterModule } from '@angular/router';
 })
 export class NavigationButtonComponent {
   // TODO: Test input renders correctly
-  @Input() to?: string;
+  @Input() to?: string | any[] | null | undefined;
 }
