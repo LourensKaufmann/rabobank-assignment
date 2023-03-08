@@ -13,15 +13,15 @@ export interface ITransactionsApiResponse {
   providedIn: 'root',
 })
 export class TransactionService {
-  private transactionsApiRespone: Observable<ITransactionsApiResponse>;
+  private transactionsApiResponse$: Observable<ITransactionsApiResponse>;
 
   constructor(private httpClient: HttpClient) {
-    this.transactionsApiRespone =
+    this.transactionsApiResponse$ =
       this.httpClient.get<ITransactionsApiResponse>(API_URL);
   }
 
   get transactionDays(): Observable<ITransactionDay[]> {
-    return this.transactionsApiRespone.pipe(
+    return this.transactionsApiResponse$.pipe(
       map(this.mapResponseToSortedTransactionDays)
     );
   }
@@ -30,7 +30,7 @@ export class TransactionService {
     transactionId: number,
     transactionDate: string
   ): Observable<ITransaction> {
-    return this.transactionsApiRespone.pipe(
+    return this.transactionsApiResponse$.pipe(
       mergeMap((x) => x.days),
       single((x) => x.id === transactionDate),
       mergeMap((x) => x.transactions),

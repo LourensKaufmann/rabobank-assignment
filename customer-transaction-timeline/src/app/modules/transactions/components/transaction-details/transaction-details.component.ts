@@ -16,7 +16,7 @@ export class TransactionDetailsComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     const transactionDate =
       this.route.snapshot.paramMap.get('transactionDate')!;
     const transactionId = this.route.snapshot.paramMap.get('transactionId')!;

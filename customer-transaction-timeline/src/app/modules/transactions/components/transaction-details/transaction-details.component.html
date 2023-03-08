@@ -1,5 +1,5 @@
 <h2>Transaction details</h2>
-<app-details-grid *ngIf="this.transaction">
+<app-key-value-grid *ngIf="this.transaction">
   <app-label-property>Date</app-label-property>
   <app-label-value-dateonly
     [dateString]="transaction.timestamp"
@@ -42,5 +42,5 @@
 
   <app-label-property>Description</app-label-property>
   <app-label-value-text>{{ transaction.description }}</app-label-value-text>
-</app-details-grid>
+</app-key-value-grid>
 <app-navigation-button to="/transactions">Back to list</app-navigation-button>

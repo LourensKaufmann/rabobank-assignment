@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DetailsGridComponent } from './details-grid.component';
+import { DetailsGridComponent } from './key-value-grid.component';
 
 describe('DetailsGridComponent', () => {
   let component: DetailsGridComponent;
