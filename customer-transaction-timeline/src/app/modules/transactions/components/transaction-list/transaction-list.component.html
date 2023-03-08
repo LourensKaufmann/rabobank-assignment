@@ -1,8 +1,8 @@
 <ol class="transaction-day-list">
-  <li *ngFor="let transactionDay of this.transactionDays | async">
+  <li *ngFor="let transactionDay of this.transactionDays | async; trackBy:transactionDayTrackBy">
     <app-label-value-dateonly class="bold" [dateString]="transactionDay.id"></app-label-value-dateonly>
     <ol class="transaction-list">
-      <li *ngFor="let transaction of transactionDay.transactions">
+      <li *ngFor="let transaction of transactionDay.transactions; trackBy:transactionTrackBy">
         <app-transaction-row
           [name]="transaction.otherParty?.name ?? 'Unknown'"
           [amount]="transaction.amount"

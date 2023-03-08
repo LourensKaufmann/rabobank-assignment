@@ -10,6 +10,8 @@ import ITransactionDay, { ITransaction } from '../../types/transaction.type';
 })
 export class TransactionListComponent {
   readonly transactionDays: Observable<ITransactionDay[]>;
+  readonly transactionDayTrackBy = (index: number, item: ITransactionDay) => item.id;
+  readonly transactionTrackBy = (index: number, item: ITransaction) => item.id;
 
   constructor(private transactionService: TransactionService) {
     this.transactionDays = transactionService.transactionDays;
