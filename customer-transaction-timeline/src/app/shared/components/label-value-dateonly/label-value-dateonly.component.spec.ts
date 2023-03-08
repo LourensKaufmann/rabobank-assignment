@@ -20,5 +20,10 @@ describe('LabelValueDateonlyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('setting #dateString should render formatted date with format dd/MM/yyy', () => {
+    component.dateString = "2022-11-06";
+    fixture.detectChanges();
+    expect(fixture.debugElement.nativeElement.innerHTML).toContain('06/11/2022');
+  });
 });
-// TODO

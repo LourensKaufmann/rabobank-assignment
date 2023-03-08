@@ -23,4 +23,3 @@ describe('NotFoundPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-// TODO

@@ -24,4 +24,3 @@ describe('TransactionDetailsPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-// TODO

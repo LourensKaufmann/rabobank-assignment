@@ -21,4 +21,3 @@ describe('LabelValueTextComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-// TODO
