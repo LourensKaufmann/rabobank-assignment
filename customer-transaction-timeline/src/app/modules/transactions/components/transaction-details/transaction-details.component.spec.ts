@@ -25,5 +25,7 @@ describe('TransactionDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // TODO: Mock TransactionService
+  // TODO: Test if all details are rendered 
 });
-// TODO
