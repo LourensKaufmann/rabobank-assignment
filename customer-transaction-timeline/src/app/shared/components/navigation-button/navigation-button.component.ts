@@ -10,6 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./navigation-button.component.scss'],
 })
 export class NavigationButtonComponent {
-  // TODO: Test input renders correctly
   @Input() to?: string | any[] | null | undefined;
 }

@@ -1,4 +1,6 @@
+import { provideHttpClient } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { TransactionDetailsPageComponent } from './transaction-details-page.component';
 
@@ -8,7 +10,8 @@ describe('TransactionDetailsPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransactionDetailsPageComponent ]
+      imports: [ TransactionDetailsPageComponent ],
+      providers: [ provideHttpClient(), provideRouter([]) ]
     })
     .compileComponents();
 

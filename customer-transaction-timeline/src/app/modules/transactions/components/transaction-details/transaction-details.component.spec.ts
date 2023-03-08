@@ -1,4 +1,7 @@
+import { provideHttpClient } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { NavigationButtonComponent } from 'src/app/shared/components/navigation-button/navigation-button.component';
 
 import { TransactionDetailsComponent } from './transaction-details.component';
 
@@ -8,7 +11,9 @@ describe('TransactionDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransactionDetailsComponent ]
+      declarations: [ TransactionDetailsComponent ],
+      providers: [ provideHttpClient(), provideRouter([]) ],
+      imports: [ NavigationButtonComponent ]
     })
     .compileComponents();
 

@@ -9,6 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./label-value-timeonly.component.scss']
 })
 export class LabelValueTimeonlyComponent {
-  // TODO: Test inputs rendered correctly.
   @Input() dateString?: string;
 }

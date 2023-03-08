@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./label-value-currency.component.scss']
 })
 export class LabelValueCurrencyComponent {
-  // TODO: Test these inputs rendering correctly
   @Input() currencyCode?: string;
   @Input() showPlusSymbolIfPositive: boolean = false;
   @Input() amount: number = 0;
