@@ -5,7 +5,7 @@ import ITransactionDay, { ITransaction } from '../types/transaction.type';
 
 const API_URL = 'http://localhost:8080/api/transactions'; // TODO: Move to .env
 
-interface ITransactionsApiResponse {
+export interface ITransactionsApiResponse {
   days: ITransactionDay[];
 }
 
