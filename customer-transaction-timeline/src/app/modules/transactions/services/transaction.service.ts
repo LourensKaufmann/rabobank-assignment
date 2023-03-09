@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map, single, mergeMap } from 'rxjs';
 import { ITransactionDay, ITransaction } from '../types/transaction.type';
+import { environment } from '../../../../environments/environment';
 
 const API_URL = 'http://localhost:8080/api/transactions'; // TODO: Move to .env
 
@@ -38,7 +39,7 @@ export class TransactionService {
 
   constructor(private httpClient: HttpClient) {
     this.transactionsApiResponse$ =
-      this.httpClient.get<ITransactionsApiResponse>(API_URL);
+      this.httpClient.get<ITransactionsApiResponse>(`${environment.apiUrl}/api/transactions`);
   }
 
   get transactionDays(): Observable<IResponseTransactionDay[]> {

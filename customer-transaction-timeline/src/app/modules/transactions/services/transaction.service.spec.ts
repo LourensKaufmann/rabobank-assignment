@@ -3,10 +3,10 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { environment } from 'src/environments/environment';
 
 import { ITransactionsApiResponse, TransactionService } from './transaction.service';
 
-const API_URL = 'http://localhost:8080/api/transactions'; // TODO: Move to .env
 const API_RESPONSE: ITransactionsApiResponse = {
   days: [
     {
@@ -117,7 +117,7 @@ describe('TransactionService', () => {
       expect(transactionDays.length).toBe(API_RESPONSE.days.length);
     });
 
-    const req = httpTestingController.expectOne(API_URL);
+    const req = httpTestingController.expectOne(`${environment.apiUrl}/api/transactions`);
     expect(req.request.method).toEqual('GET');
     req.flush(API_RESPONSE);
   });
@@ -128,7 +128,7 @@ describe('TransactionService', () => {
       expect(transaction.timestamp).toBe('2022-11-08T10:30:47.123456');
     });
 
-    const req = httpTestingController.expectOne(API_URL);
+    const req = httpTestingController.expectOne(`${environment.apiUrl}/api/transactions`);
     expect(req.request.method).toEqual('GET');
     req.flush(API_RESPONSE);
   });
