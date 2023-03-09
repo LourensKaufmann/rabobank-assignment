@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { take } from 'rxjs';
 import { TransactionService } from '../../services/transaction.service';
 import { ITransaction } from '../../types/transaction.type';
 
@@ -23,6 +24,7 @@ export class TransactionDetailsComponent implements OnInit {
 
     this.transactionService
       .transactionByIdOnDate(parseInt(transactionId), transactionDate)
+      .pipe(take(1))
       .subscribe((transaction) => (this.transaction = transaction));
   }
 }
