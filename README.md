@@ -5,8 +5,8 @@
 - Start Angular app by running `ng serve` in `/customer-transaction-timeline`
 
 ## TODO
-- Data mapping layer(decouple backend from frontend)
 - Persist data between pages
+- Refactor transaction module components and types. Instead of these types being a copy from the response types.
 - Finish Storybook implementation
 - i18n
-- Vercel deployment (be + fe)
+- Deployment
