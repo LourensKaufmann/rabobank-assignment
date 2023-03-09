@@ -1,4 +1,4 @@
-export default interface ITransactionDay {
+export interface ITransactionDay {
   id: string;
   transactions: ITransaction[];
 }

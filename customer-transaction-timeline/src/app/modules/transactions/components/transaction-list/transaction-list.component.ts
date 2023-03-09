@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TransactionService } from '../../services/transaction.service';
-import ITransactionDay, { ITransaction } from '../../types/transaction.type';
+import { ITransactionDay, ITransaction } from '../../types/transaction.type';
 
 @Component({
   selector: 'app-transaction-list',

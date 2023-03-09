@@ -1,13 +1,34 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map, single, mergeMap } from 'rxjs';
-import ITransactionDay, { ITransaction } from '../types/transaction.type';
+import { ITransactionDay, ITransaction } from '../types/transaction.type';
 
 const API_URL = 'http://localhost:8080/api/transactions'; // TODO: Move to .env
 
 export interface ITransactionsApiResponse {
-  days: ITransactionDay[];
+  days: IResponseTransactionDay[];
 }
+
+interface IResponseTransactionDay {
+  id: string;
+  transactions: IResponseTransaction[];
+}
+
+interface IResponseTransaction {
+  id: number;
+  timestamp: string;
+  amount: number;
+  currencyCode: string;
+  currencyRate?: number;
+  description: string;
+  otherParty?: IResponseOtherParty;
+}
+
+interface IResponseOtherParty {
+  name: string;
+  iban: string;
+}
+
 
 @Injectable({
   providedIn: 'root',
@@ -20,7 +41,7 @@ export class TransactionService {
       this.httpClient.get<ITransactionsApiResponse>(API_URL);
   }
 
-  get transactionDays(): Observable<ITransactionDay[]> {
+  get transactionDays(): Observable<IResponseTransactionDay[]> {
     return this.transactionsApiResponse$.pipe(
       map(this.mapResponseToSortedTransactionDays)
     );
